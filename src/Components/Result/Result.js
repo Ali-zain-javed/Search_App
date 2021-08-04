@@ -6,7 +6,7 @@ function Result(props) {
   *
  */
     const { error = null, result = {}, SearchAgian = () => { } } = props;
-    const { items = [], incomplete_results = true, total_count = 0 } = result || {}
+    const { items = [], total_count = 0 } = result || {}
 
     ///this method call on click page number in pagination then this function fetch new Items
     const fetchNewItem = (pageNumber) => {
@@ -39,8 +39,8 @@ function Result(props) {
             {items.length == 0 && <div style={{ textAlign: "center", marginTop: "20px" }}>No Record Found</div>}
             <div style={{ marginTop: "11px" }}>
                 <Pager
-                    currentPage={props.pageDetails && props.pageDetails.currentPage || 1}
-                    pageLimit={props.pageDetails && props.pageDetails.limit || 30}
+                    currentPage={props.pageDetails ? props.pageDetails.currentPage :1}
+                    pageLimit={props.pageDetails ? props.pageDetails.limit : 30}
                     totalRecords={total_count}
                     onPageChanged={fetchNewItem || {}}
                 />
