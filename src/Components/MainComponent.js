@@ -28,7 +28,7 @@ function MainComponent() {
   *and on chnage page number ,this method will again call then save result and pass to reult component
  */
     const searchResult = (userName = "", pageNumber = 1) => {
-        if (userName != "") {
+        if (userName !== "") {
             setSearchString(userName)
         }
         else {
@@ -64,8 +64,8 @@ function MainComponent() {
     }
     return (
         <div className="App">
-            {appState.searched == false && <Search error={appState.error} searchResult={searchResult} />}
-            {appState.searched == true && <Result result={appState.result} SearchAgian={SearchAgian} pageDetails={pageDetail} error={appState.error} searchResult={searchResult} />}
+            {appState.searched === false && <Search error={appState.error} searchResult={searchResult} />}
+            {appState.searched === true && <Result result={appState.result} SearchAgian={SearchAgian} pageDetails={pageDetail} error={appState.error} searchResult={searchResult} />}
         </div>
     );
 }
