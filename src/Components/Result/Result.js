@@ -28,7 +28,7 @@ function Result(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    {error == null && items && items.map((item, index) => <tr key={index}>
+                    {error === null && items && items.map((item, index) => <tr key={index}>
                         <td><img src={item.avatar_url} alt="loading..." width="100" height="70" /></td>
                         <td>{item.login}</td>
                         <td>{item.type}</td>
@@ -36,7 +36,7 @@ function Result(props) {
                 </tbody>
             </table>
 
-            {items.length == 0 && <div style={{ textAlign: "center", marginTop: "20px" }}>No Record Found</div>}
+            {items.length === 0 && <div style={{ textAlign: "center", marginTop: "20px" }}>No Record Found</div>}
             <div style={{ marginTop: "11px" }}>
                 <Pager
                     currentPage={props.pageDetails && props.pageDetails.currentPage || 1}
