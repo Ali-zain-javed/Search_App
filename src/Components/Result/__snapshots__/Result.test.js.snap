@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyComponent In my test case should render correctly in "debug" mode 1`] = `ShallowWrapper {}`;

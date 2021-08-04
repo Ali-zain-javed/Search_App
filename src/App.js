@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import MainComponent from './Components/MainComponent.js'
 function App() {
+  /**
+ *For starting App is main entry point
+ *MainComponent is like container for manage the the search and results component
+ */
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainComponent />
     </div>
   );
 }

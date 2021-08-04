@@ -1,0 +1,46 @@
+#user {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .Outer{
+      margin:60px
+  }
+  
+  #user td, #user th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .error {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+  }
+ 
+ 
+  #user tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #user tr:hover {background-color: #ddd;}
+  
+  #user th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
