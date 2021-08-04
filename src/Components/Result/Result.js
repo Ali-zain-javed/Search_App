@@ -1,3 +1,4 @@
+import React from 'react';
 import './Result.css';
 import Pager from '../Pagination/Pagination.js'
 function Result(props) {

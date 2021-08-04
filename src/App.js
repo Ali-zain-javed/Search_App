@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import './App.css';
 import MainComponent from './Components/MainComponent.js'
 function App() {
